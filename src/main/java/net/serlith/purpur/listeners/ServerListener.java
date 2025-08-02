@@ -17,7 +17,7 @@ public class ServerListener implements Listener {
     private static final int TPS_SAMPLE_INTERVAL = 20;
     private static final BigDecimal TPS_BASE = new BigDecimal(SEC_IN_NANO).multiply(new BigDecimal(TPS_SAMPLE_INTERVAL));
 
-    public static final TpsRollingAverage TPS_5_SEC = new TpsRollingAverage(5);
+    public static final TpsRollingAverage TPS_5_SEC = new TpsRollingAverage(1);
 
     private int tick = 0;
     private long last = 0;
